@@ -7,7 +7,7 @@ function Spanish() {
 
     return (
         <div className=' bg-white'>
-             <MobilePDFReader url="src\assets\menuEspanol.pdf"
+             <MobilePDFReader url="https://github.com/LuisLescano988/menuMestixa/blob/master/src/assets/englishMenu.pdf"
              width="full"
              isShowFooter={false}
              />
