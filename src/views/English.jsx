@@ -1,11 +1,14 @@
 import React from 'react'
+import { MobilePDFReader } from 'react-read-pdf';
+
 
 function English() {
   return (
     <div className=' bg-white'>
-        <iframe src='src\assets\englishMenu.pdf#view=FitH' 
-        className=' absolute w-full h-screen m-0'
-        />
+      <MobilePDFReader url="src\assets\englishMenu.pdf"
+        width="full"
+        isShowFooter={false}
+      />
     </div>
   )
 }
