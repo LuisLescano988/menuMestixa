@@ -7,19 +7,21 @@ import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div className=' bg-black'>
+    <div className=' bg-black h-screen'>
       <img src={header} />
-      <button className=' m-0 p-0'>
-        <NavLink to={'/spanish'}>
-          <img src={español} />
-        </NavLink>
-      </button>
-      <button>
-        <NavLink to={'/english'}>
-          <img src={ingles} />
-        </NavLink>
-      </button>
-      <img src={footer} />
+      <div className=' flex flex-col z-20'>
+        <button className=''>
+          <NavLink to={'/spanish'}>
+            <img src={español} />
+          </NavLink>
+        </button>
+        <button>
+          <NavLink to={'/english'}>
+            <img src={ingles} />
+          </NavLink>
+        </button>
+      </div>
+      <img src={footer} className=' z-10 md:relative absolute bottom-0' />
     </div>
   )
 }

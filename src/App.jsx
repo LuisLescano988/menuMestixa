@@ -8,7 +8,7 @@ import English from "./views/English"
 function App() {
 
   return (
-    <div>
+    <div className=' bg-black'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/spanish" element={<Spanish />} />
