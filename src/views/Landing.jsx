@@ -1,6 +1,6 @@
 import React from 'react'
 import header from '../assets/header.jpg'
-import español from '../assets/español.jpg'
+import espanol from '../assets/espanol.jpg'
 import ingles from '../assets/ingles.jpg'
 import footer from '../assets/footer.jpg'
 import { NavLink } from 'react-router-dom'
@@ -12,7 +12,7 @@ const Home = () => {
       <div className=' flex flex-col z-20'>
         <button className=''>
           <NavLink to={'/spanish'}>
-            <img src={español} />
+            <img src={espanol} />
           </NavLink>
         </button>
         <button>
