@@ -7,6 +7,7 @@ function English() {
     <div className=' bg-white'>
       <MobilePDFReader url="src\assets\englishMenu.pdf"
         width="full"
+        isShowHeader={false}
         isShowFooter={false}
       />
     </div>
