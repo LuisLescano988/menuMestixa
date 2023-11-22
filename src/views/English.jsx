@@ -5,9 +5,9 @@ import pdf from '../assets/englishMenu.pdf'
 
 function English() {
   return (
-    <div className=' bg-white'>
+    <div className=' bg-black'>
       <MobilePDFReader url={pdf}
-        width="full"
+        scale={auto}   
         isShowHeader={false}
         isShowFooter={false}
       />
