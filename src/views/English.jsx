@@ -1,23 +1,21 @@
 import React from 'react'
-// import { MobilePDFReader } from 'react-read-pdf';
-import { Viewer, Worker, SpecialZoomLevel } from '@react-pdf-viewer/core'
+// import { Viewer, Worker, SpecialZoomLevel } from '@react-pdf-viewer/core'
+import { Document, Page } from 'react-pdf';
 import pdf from '../assets/englishMenu.pdf'
 
 
 function English() {
   return (
     <div className=' bg-black'>
-      <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+       <Document file={pdf}>
+        <Page pageNumber={1} />
+      </Document>
+      {/* <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
         <Viewer
           fileUrl={pdf}
           defaultScale={SpecialZoomLevel.PageFit}
         />
-      </Worker>
-      {/* <MobilePDFReader url={pdf}
-        scale={auto}   
-        isShowHeader={false}
-        isShowFooter={false}
-      /> */}
+      </Worker> */}
     </div>
   )
 }
