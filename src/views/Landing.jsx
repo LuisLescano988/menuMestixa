@@ -7,9 +7,9 @@ import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div className=' bg-black h-screen'>
+    <div className=' bg-white overflow-hidden bottom-0'>
       <img src={header} />
-      <div className=' flex flex-col z-20'>
+      <div className=' flex flex-col '>
         <button className=''>
           <NavLink to={'/spanish'}>
             <img src={espanol} />
@@ -21,7 +21,7 @@ const Home = () => {
           </NavLink>
         </button>
       </div>
-      <img src={footer} className=' z-10 md:relative absolute bottom-0' />
+      <img src={footer} className=' md:relative absolute bottom-0 -my-20 p-0' />
     </div>
   )
 }
