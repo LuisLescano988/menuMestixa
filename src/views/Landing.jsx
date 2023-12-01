@@ -24,8 +24,12 @@ const Home = () => {
             <img src={ingles} />
           </NavLink>
         </button>
+        <button className=''>
+          <NavLink to={'https://www.instagram.com/mestixarestaurant/'}>
+            <img src={footer} className='' />
+          </NavLink>
+        </button>
       </div>
-      <img src={footer} className=' bottom-0' />
       <img src={footer2} className=' bottom-0' />
     </div>
   )
