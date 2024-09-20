@@ -1,4 +1,3 @@
-import React from 'react'
 import header from '../assets/header.jpg'
 import header2 from '../assets/header2.jpg'
 import espanol from '../assets/espanol.jpg'
@@ -10,11 +9,11 @@ import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div className=' bg-black h-fit overflow-hidden'>
-      <img src={header} />
+    <div className=' flex flex-col justify-end bg-black h-screen overflow-hidden'>
+      <img src={header} className=' -mb-[0.2%]' />
       <img src={header2} />
       <div className=' flex flex-col '>
-        <button className=''>
+        <button className=' -mb-[0.5%]'>
           <NavLink to={'/spanish'}>
             <img src={espanol} />
           </NavLink>
