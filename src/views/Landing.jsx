@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div className=' bg-white h-fit overflow-hidden'>
+    <div className=' bg-black h-fit overflow-hidden'>
       <img src={header} />
       <img src={header2} />
       <div className=' flex flex-col '>
