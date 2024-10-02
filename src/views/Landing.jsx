@@ -9,18 +9,18 @@ import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div className=' flex flex-col justify-end bg-black h-screen overflow-hidden'>
-      <img src={header} className=' -mb-[0.2%]' />
-      <img src={header2} />
-      <div className=' flex flex-col '>
+    <div className=' flex flex-col items-center justify-end bg-black h-screen overflow-hidden'>
+      <img src={header} className=' md:w-1/3 -mb-[0.2%]' />
+      <img src={header2} className=' md:w-1/3' />
+      <div className=' flex flex-col md:w-1/3'>
         <button className=' -mb-[0.5%]'>
           <NavLink to={'/spanish'}>
-            <img src={espanol} />
+            <img src={espanol} className=' md:h-20 md:w-full md:object-contain' />
           </NavLink>
         </button>
         <button>
           <NavLink to={'/english'}>
-            <img src={ingles} />
+            <img src={ingles} className=' md:h-20 md:w-full md:object-contain'/>
           </NavLink>
         </button>
         <button className=''>
@@ -29,7 +29,7 @@ const Home = () => {
           </NavLink>
         </button>
       </div>
-      <img src={footer2} className=' bottom-0' />
+      <img src={footer2} className=' md:w-1/3 bottom-0' />
     </div>
   )
 }

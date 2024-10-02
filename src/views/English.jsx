@@ -1,4 +1,3 @@
-import React from 'react'
 import first from '../assets/eng1.jpg';
 import second from '../assets/eng2.jpg';
 
