@@ -119,7 +119,19 @@ const Home = () => {
   );
 
   // Renderizar condicionalmente basado en el tamaño de pantalla
-  return isMobile ? <MobileView /> : <DesktopView />;
+  return (
+    <>
+      {/* Vista Móvil - se muestra por defecto y se oculta en md */}
+      <div className="block md:hidden">
+        <MobileView />
+      </div>
+      
+      {/* Vista Desktop - se oculta por defecto y se muestra en md */}
+      <div className="hidden md:block">
+        <DesktopView />
+      </div>
+    </>
+  );
 };
 
 export default Home;
