@@ -63,7 +63,7 @@ const Home = () => {
 
   // Función para actualizar el estado basado en el ancho de la pantalla
   const checkScreenSize = () => {
-    setIsMobile(window.innerWidth <= 768); // 768px es el breakpoint md de Tailwind
+    setIsMobile(window.innerWidth <= 568); // 768px es el breakpoint md de Tailwind
   };
 
   // Efecto para verificar el tamaño inicial y añadir el listener
@@ -106,7 +106,7 @@ const Home = () => {
   // Componente desktop
   const DesktopView = () => (
     <div className="flex relative justify-center h-screen z-0 bg-black">
-      <img className="object-cover" src={fullbg} alt="" />
+      <img className="object-cover bg-black" src={fullbg} alt="" />
       <div className="flex flex-col absolute h-1/6 bg-rose-300 top-[39%]">
         <NavLink className="z-10 h-1/2 w-auto bg-green-200" to="/spanish">
           <img className=" h-[100%]" src={spang} alt="" />
