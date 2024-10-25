@@ -59,24 +59,7 @@ import spang from "../assets/newEspanol.jpg";
 import eng from "../assets/newIngles.jpg";
 
 const Home = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Función para actualizar el estado basado en el ancho de la pantalla
-  const checkScreenSize = () => {
-    setIsMobile(window.innerWidth <= 568); // 768px es el breakpoint md de Tailwind
-  };
-
-  // Efecto para verificar el tamaño inicial y añadir el listener
-  useEffect(() => {
-    checkScreenSize(); // Verificar tamaño inicial
-
-    // Agregar event listener para cambios en el tamaño de pantalla
-    window.addEventListener("resize", checkScreenSize);
-
-    // Cleanup: remover event listener
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
-
+  
   // Componente móvil
   const MobileView = () => (
     <div className="flex flex-col items-center justify-end bg-black h-screen overflow-hidden">
@@ -118,16 +101,13 @@ const Home = () => {
     </div>
   );
 
-  // Renderizar condicionalmente basado en el tamaño de pantalla
   return (
     <>
-      {/* Vista Móvil - se muestra por defecto y se oculta en md */}
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
         <MobileView />
       </div>
       
-      {/* Vista Desktop - se oculta por defecto y se muestra en md */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <DesktopView />
       </div>
     </>
