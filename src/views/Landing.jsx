@@ -107,8 +107,8 @@ const Home = () => {
   const DesktopView = () => (
     <div className="flex relative justify-center h-screen z-0 bg-black">
       <img className="object-cover bg-black" src={fullbg} alt="" />
-      <div className="flex flex-col absolute h-1/6 bg-rose-300 top-[39%]">
-        <NavLink className="z-10 h-1/2 w-auto bg-green-200" to="/spanish">
+      <div className="flex flex-col absolute h-1/6 bg-black top-[39%]">
+        <NavLink className="z-10 h-1/2 w-auto bg-black" to="/spanish">
           <img className=" h-[100%]" src={spang} alt="" />
         </NavLink>
         <NavLink className="z-10 h-1/2 w-auto" to="/english">
