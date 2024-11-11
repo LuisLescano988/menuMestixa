@@ -5,9 +5,9 @@ import second from '../assets/11-18.jpg';
 function Spanish() {
 
     return (
-        <div className=' bg-black'>
-            <img src={first} alt="" />
-            <img src={second} alt="" />
+        <div className=' bg-black w-screen'>
+            <img className=' w-screen' src={first} alt="" />
+            <img className=' w-screen' src={second} alt="" />
         </div>
     )
 }

@@ -5,8 +5,8 @@ import second from '../assets/eng2.jpg';
 function English() {
   return (
     <div className=' bg-black'>
-      <img src={first} alt="" />
-      <img src={second} alt="" />
+      <img className=' w-screen' src={first} alt="" />
+      <img className=' w-screen' src={second} alt="" />
     </div>
   )
 }
