@@ -13,6 +13,7 @@
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/print": "^3.12.0",
     "pdfjs-dist": "^3.4.120",
+    "qrcode.react": "^4.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-pdf": "^7.5.1",
