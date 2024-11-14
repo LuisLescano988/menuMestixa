@@ -56,11 +56,11 @@ const LandingAirport = () => {
 
   return (
     <>
-      <div className="block lg:hidden">
+      <div className="block md:hidden">
         <MobileView />
       </div>
       
-      <div className="hidden lg:block">
+      <div className="hidden md:block">
         <DesktopView />
       </div>
     </>
