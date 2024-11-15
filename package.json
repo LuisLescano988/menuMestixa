@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/print": "^3.12.0",
+    "@tailwindcss/typography": "^0.5.15",
+    "lucide-react": "^0.459.0",
     "pdfjs-dist": "^3.4.120",
     "qrcode.react": "^4.1.0",
     "react": "^18.2.0",
