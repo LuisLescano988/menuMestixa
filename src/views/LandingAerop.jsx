@@ -9,9 +9,9 @@ import english from '../assets/newIngles.jpg'
 const LandingAirport = () => {
     const MobileView = () => (
         <div className=' flex justify-center fixed h-[93vh]'>
-            <img className=' absolute max-sm:top-0 h-screen max-sm:h-[45%] max-sm:w-full max-sm:object-cover' src={header} alt="" />
-            <img className=' absolute max-sm:bottom-0 h-screen max-sm:h-[39%] max-sm:w-full max-sm:object-cover' src={footer} alt="" />
-            <div className=' flex flex-col items-center max-sm:pt-[23%] justify-center h-screen '>
+            <img className=' absolute max-sm:top-0 max-sm:h-[45%] max-sm:w-full max-sm:object-cover' src={header} alt="" />
+            <img className=' absolute max-sm:bottom-0 max-sm:h-[39%] max-sm:w-full max-sm:object-cover' src={footer} alt="" />
+            <div className=' flex flex-col items-center max-sm:pt-[23%] justify-center h-full'>
                 <a className='flex flex-col items-center z-10' href="/spanishport">
                     <img className=' cursor-pointer max-sm:w-full w-1/3' src={spanish} alt="" />
                 </a>
