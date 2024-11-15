@@ -14,7 +14,7 @@ const Home = () => {
   
   // Componente móvil
   const MobileView = () => (
-    <div className="flex flex-col items-center justify-end bg-black h-screen overflow-hidden">
+    <div className="flex flex-col items-center justify-end bg-black h-[93vh] overflow-hidden">
       <img src={header} className="w-full -mb-[0.2%]" />
       <img src={header2} className="w-full" />
       <div className="flex flex-col w-full">
