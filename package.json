@@ -15,11 +15,11 @@
     "@react-pdf-viewer/print": "^3.12.0",
     "@tailwindcss/typography": "^0.5.15",
     "lucide-react": "^0.459.0",
-    "pdfjs-dist": "^3.4.120",
+    "pdfjs-dist": "^3.11.174",
     "qrcode.react": "^4.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-pdf": "^7.5.1",
+    "react-pdf": "^7.7.3",
     "react-read-pdf": "^2.0.9",
     "react-router-dom": "^6.19.0"
   },
