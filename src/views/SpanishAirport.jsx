@@ -13,18 +13,18 @@ function SpanishAirport() {
 
     const onDocumentLoadSuccess = ({ numPages }) => {
         setNumPages(numPages);
-        // Calcula el ancho inicial
+    
         calculatePageWidth();
-        // Recalcula el ancho cuando la ventana cambie de tamaño
+    
         window.addEventListener('resize', calculatePageWidth);
     };
 
     const calculatePageWidth = () => {
-        // Usa el 90% del ancho de la ventana en móviles, 80% en desktop
+    
         const width = window.innerWidth;
         const calculatedWidth = width < 768
-            ? width * 0.9  // 90% en móviles
-            : width * 0.8; // 80% en desktop
+            ? width * 0.9 
+            : width * 0.8;
         setPageWidth(calculatedWidth);
     };
 
